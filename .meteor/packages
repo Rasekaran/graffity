@@ -9,4 +9,5 @@ insecure
 preserve-inputs
 iron-router
 accounts-ui-bootstrap-dropdown
-accounts-ui
+bootstrap
+accounts-password
