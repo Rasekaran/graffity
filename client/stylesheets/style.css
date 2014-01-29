@@ -10,7 +10,7 @@ body {
 background: #eee;
 color: #666666;
 }
-.navbar { margin-bottom: 10px }
+.navbar { margin-bottom: 0; }
 .navbar .navbar-inner {
 border-radius: 0px 0px 3px 3px;
 }
@@ -99,6 +99,7 @@ background: rgba(0, 0, 0, 0.1);
 * {
 		margin:0;
 		padding:0;
+    font-family: 'Lato', sans-serif;
 	}
 	.fullwrap {
 		width:100%;
@@ -119,6 +120,9 @@ background: rgba(0, 0, 0, 0.1);
 		border-spacing:0;
 		vertical-align: top;
 	}
+  .wall table td:hover {
+   
+  }
 	.footer {
 		height:60px;
 		background-color: #444;
@@ -138,10 +142,12 @@ background: rgba(0, 0, 0, 0.1);
 		margin-right:20px;
 	}
 	.designerinfo {
-		background-color:rgba(255,0,0,0.5);
-		position: relative;
-		z-index: 1;
+		background-color:rgba(0,0,0,0.5);
+		margin-top:155px;
 	}
+  .designerinfo {
+    color:rgba(255,255,255,1);
+  }
 	.aimg img {
 		border-radius:100%;
 		-webkit-border-radius: 100%;
@@ -154,6 +160,7 @@ background: rgba(0, 0, 0, 0.1);
 		width:80px;
 		height:80px;
 		float:left;
+    margin-left:5px;
 
 	}
 	.ainfo table {
@@ -161,10 +168,33 @@ background: rgba(0, 0, 0, 0.1);
 	}
 	.ainfo {
 		float:left;
+    margin-top: 12px;
 	}
 	.designerinfo {
 		height:105px;
 	}
 	.lovebutton {
 		float:right;
+    margin-right:10px;
 	}
+  .test {
+    background-image:url("http://upload.wikimedia.org/wikipedia/commons/f/fe/20091007_Graffiti_Shanghai_7373.jpg");
+  }
+  .lovebtn {
+    background-image:url(love-button.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    width:29px;
+    height:25px;
+    float:left;
+  }
+  .ainfo .name {
+    font-size:18px;
+  }
+  .ainfo .level {
+    font-size:13px;
+  }
+  .designwr {
+    margin-top:15px;
+    float:left;
+  }
