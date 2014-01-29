@@ -103,6 +103,7 @@ background: rgba(0, 0, 0, 0.1);
 	}
 	.fullwrap {
 		width:100%;
+    float:left;
 	}
 	.header {
 		height:60px;
@@ -197,4 +198,7 @@ background: rgba(0, 0, 0, 0.1);
   .designwr {
     margin-top:15px;
     float:left;
+  }
+  .dname {
+    font-size:20px;
   }
