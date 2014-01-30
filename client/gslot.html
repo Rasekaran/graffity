@@ -3,9 +3,9 @@
         <tr>
             {{#if isReserved}}
             	{{#if isOwnSlot}}
-            		{{> gupload}}
+            		<span>Fileupload</span>
             	{{else}}
-            		{{> greserve}}
+            		<span>Reserved</span>
             	{{/if}}
             {{else}} 
             	{{#if isUploaded}}

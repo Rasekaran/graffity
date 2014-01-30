@@ -1,6 +1,7 @@
 Template.gwallraw.helpers({
     images: function() {
         
-        return this.data;
+        //return this.rawData;
+        return {};
     }
 });
