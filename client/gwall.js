@@ -33,7 +33,7 @@ Template.gwall.helpers({
             var rawData = Images.find({
                 locationX: i
             }, {
-                $sort: { locationY: -1 }
+                sort: { locationY: -1 }
             });
             rawImages[i-1] = {order: i, rawData:rawData};
         }

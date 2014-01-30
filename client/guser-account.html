@@ -1,4 +1,4 @@
-<template name="guser-account">
+<template name="guserAccount">
   <div class="fullwrap floatleft">
     <div class="col1">
       <div class="postimgs">a</div>
@@ -10,9 +10,9 @@
         <div class="fullwrap">
           <table>
             <tr>
-              <td class="proimgwrp"><div class="proimg"><img src="http://i.imgur.com/xKE07.jpg"/></div></td>
+              <td class="proimgwrp"><div class="proimg"><img src="/../../profile_images/{{userProfileData.fileName}}"/></div></td>
               <td class="desinfo">
-                <span class="desname">Sir Mittens Whiskers</span>
+                <span class="desname">{{userProfileData.name}}</span>
                 <div class="desranking fullwrap">
                   <table class="lfloater">
                     <tr>
@@ -20,7 +20,7 @@
                       <td><span class="lovecounts">count</span></td>
                       <td class="space"></td>
                       <td><span class="deslvl">Level</span></td>
-                      <td><span class="deslvl">Paladin</span></td>
+                      <td><span class="deslvl">{{level}}</span></td>
                     </tr>
                   </table>
                   </div>
@@ -28,13 +28,13 @@
             </tr>
           </table>
         </div>
-        <div class="fullwrap desDesc">asdasdasd</div>
+        <div class="fullwrap desDesc">{{userProfileData.description}}</div>
         <div class="fullwrap desSocial">
           <table>
-            <td><a href="#"><img border="0" src="/../../images/fb.png"/></a></td>
-            <td><a href="#"><img border="0" src="/../../images/twitter.png"/></a></td>
-            <td><a href="#"><img border="0" src="/../../images/gplus.png"/></a></td>
-            <td><a href="#"><img border="0" src="/../../images/linked.png"/></a></td>
+            <td><a href="{{facebookShareLink}}"><img border="0" src="/../../images/fb.png"/></a></td>
+            <td><a href="{{twitterShareLink}}"><img border="0" src="/../../images/twitter.png"/></a></td>
+            <td><a href="{{gplusShareLink}}"><img border="0" src="/../../images/gplus.png"/></a></td>
+            <td><a href="{{linkedinShareLink}}"><img border="0" src="/../../images/linked.png"/></a></td>
             <td><a href="#"><img border="0" src="/../../images/dribble.png"/></a></td>
           </table>
         </div>

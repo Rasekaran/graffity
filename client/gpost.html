@@ -5,9 +5,9 @@
             <div class="fullwrap titles">Share</div>
             <div class="fullwrap">
               <div class="socialbtn-wrap">
-                <div><a href="#"><img border="0" src="../../images/fb-share.png"/></a></div>
-                <div><a href="#"><img border="0" src="../../images/twitter-share.png"/></a></div>
-                <div><a href="#"><img border="0" src="../../images/gplus-share.png"/></a></div>
+                <div><a href="{{facebookShareLink}}"><img border="0" src="../../images/fb-share.png"/></a></div>
+                <div><a href="{{twitterShareLink}}"><img border="0" src="../../images/twitter-share.png"/></a></div>
+                <div><a href="{{gplusShareLink}}"><img border="0" src="../../images/gplus-share.png"/></a></div>
                 <div><a href="#"><img border="0" src="../../images/pintrest.png"/></a></div>
               </div> <!-- End of socialbtn-wrap -->
             </div>
@@ -15,18 +15,21 @@
         
         <!-- start designer info -->
         <div class="designwr fullwrap">
-            <div class="aimg"><img src="http://i.imgur.com/xKE07.jpg"/></div>
+            <div class="aimg"><img src="../../profile_images/{{userProfile.fileName}}"/></div>
              <div class="ainfo">
-               <span class="name">Sir Mittens Whiskers</span> <br/>
-               <span class="level">Level: Paladin</span>
+               <span class="name">{{userProfile.name}}</span> <br/>
+               <span class="level">Level: {{level}}</span>
              </div>
             <div class="lovebutton">
                 <div class="fullwrap"><a href="#" class="lovebtn"><img border="0" src="../../images/love-button.png"/></a>
                 </div>
-                <div class="fullwrap lovecount"><span class="lovecount">23</span></div>
+                <div class="fullwrap lovecount"><span class="lovecount">{{votes}}</span></div>
             </div>
         </div>  
         <!-- end designer info -->
           </div>
 					</td>
+    }
+    }
+    }
 </template>

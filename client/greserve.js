@@ -1,7 +1,7 @@
 Template.greserve.events({
-    'submit form': function(e, tmpl) {//click a
+    'click a': function(e, tmpl) {
         e.preventDefault();
-
+        
         var divId = e.target.id.split(",");
 
         var image = {

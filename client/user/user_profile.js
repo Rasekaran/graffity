@@ -2,6 +2,8 @@ Template.userProfileUpdate.events({
     'submit form': function(e, tmpl) {
         e.preventDefault();
 
+        var user = Meteor.user();
+        var profileExist = UserProfiles.findOne({userId: user._id});
 
         var userProfile = {
             name: $(e.target).find('[name=name]').val(),

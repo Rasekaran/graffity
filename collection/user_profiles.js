@@ -17,7 +17,8 @@ Meteor.methods({
         // pick out the whitelisted keys
         var userProfile = _.extend(_.pick(postAttributes, 'name', 'email', 'description', 'fileName'), {
             userId: user._id,
-            voted: 0
+            voted: 0,
+            votes: 0
 
         });
         var profileId = UserProfiles.insert(userProfile);
