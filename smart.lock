@@ -3,7 +3,9 @@
   "dependencies": {
     "basePackages": {
       "iron-router": {},
-      "accounts-ui-bootstrap-dropdown": {}
+      "accounts-ui-bootstrap-dropdown": {},
+      "meteor-file": {},
+      "collectionFS": {}
     },
     "packages": {
       "iron-router": {
@@ -15,6 +17,21 @@
         "git": "https://github.com/erobit/meteor-accounts-ui-bootstrap-dropdown.git",
         "tag": "v0.6.5.1",
         "commit": "c8b29d2e7f8611d6dec9d6d23c1c2b94e000b0fb"
+      },
+      "meteor-file": {
+        "git": "https://github.com/EventedMind/meteor-file.git",
+        "tag": "v0.0.7",
+        "commit": "5d3edaaccfb9d0995cf848abfb61c3bd101ea507"
+      },
+      "collectionFS": {
+        "git": "https://github.com/raix/Meteor-CollectionFS.git",
+        "tag": "v0.3.7",
+        "commit": "34d9fb363472e44c6dba4a1473a9e106e107f5a9"
+      },
+      "cfs-public-folder": {
+        "git": "https://github.com/nooitaf/meteor-cfs-public-folder.git",
+        "tag": "v0.0.3",
+        "commit": "581c716424b374efb6f611110002621f9cc9212b"
       }
     }
   }
