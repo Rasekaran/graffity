@@ -21,7 +21,7 @@ Template.gupload.events({
         var file = fileInput.files[0];
         console.log("event calling upload file");
         MeteorFile.read(file, function(err, meteorFile) {
-            Meteor.call("uploadFile", meteorFile, function(err) {
+            Meteor.call("uploadWallImageFile", meteorFile, function(err) {
                 if (err) {
                     throw err;
                 } else {

@@ -45,7 +45,7 @@ Meteor.methods({
         }
         
         recerved.imageName = postAttributes.fileName;
-        recerved.states = "Uploaded";
+        recerved.status = "Uploaded";
         var imageId = Images.update(recerved._id,recerved);
         //var imageId = Images.update(recerved._id,{imageName: postAttributes.fileName },{status: "Uploaded"});
         //return postId;
