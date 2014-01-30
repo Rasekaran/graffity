@@ -1,0 +1,21 @@
+<template name="gslot">
+    <div class="fullwrap wall">
+        <tr>
+            {{#if isReserved}}
+            	{{#if isOwnSlot}}
+            		{{> gupload}}
+            	{{else}}
+            		{{> greserve}}
+            	{{/if}}
+            {{else}} 
+            	{{#if isUploaded}}
+
+            		<span>Uploaded</span>
+            		{{> gpostrollover}}
+            	{{else}}
+            		<span>Not reserved</span>
+            	{{/if}} 
+            {{/if}}
+        </tr>
+    </div>
+</template>

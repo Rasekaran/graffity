@@ -1,24 +1,9 @@
 <template name="gwall">
     <div class="fullwrap wall">
 			<table>
-				<tr>
-          {{> gpostrollover}}
-					{{> greserve}} 
-					{{> gupload}} 
-					{{> gpostrollover}}
-				</tr>
-				<tr>
-					{{> greserve}} 
-					{{> gpostrollover}}
-					{{> gpostrollover}}
-					{{> greserve}} 
-				</tr>
-				<tr>
-					{{> gpostrollover}}
-					{{> greserve}} 
-					{{> gpostrollover}} 
-					{{> gpostrollover}}
-				</tr>
+				{{#each imageRaws}}
+					{{> gwallraw}}
+				{{/each}}
 			</table>
 		</div>
 </template>
