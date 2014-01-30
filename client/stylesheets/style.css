@@ -431,3 +431,14 @@ background: rgba(0, 0, 0, 0.1);
   .navbar .nav > li > a:hover {
     color:#ff7200;
   }
+  .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    color:#FFF;
+    background:none;
+  }
+  .btn-primary {
+    background-color:#d56501;
+    background-image: linear-gradient(to bottom, #d56501, #d56501);
+  }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
+    background-color: #b45704;
+  }
