@@ -15,19 +15,28 @@ Template.gwall.helpers({
         }
         return RawImages.find();*/
 
-        rawImages=new Array();
+        //
+
+        var rawImages=[];
+
+        /*var hasMore = true;
+        var row = 1;
+        while ( hasMore ){
+        	var rowData = Images.find({locationY: row},{$sort: { locationX: -1 }});
+        	rawImages[row-1] = rowData;
+
+        	row++;
+        	hasMore = (Images.findOne({locationY: row}) != undefined)
+        }*/
 
         for (var i = 1; i < 4; i++) {
             var rawData = Images.find({
                 locationX: i
             }, {
-                sort: { locationY: -1 }
+                $sort: { locationY: -1 }
             });
-            RawImages.insert({
-                order: i,
-                rawData: rawData
-            });
+            rawImages[i-1] = {order: i, rawData:rawData};
         }
-        return RawImages.find();
+        return rawImages;
     }
 });
