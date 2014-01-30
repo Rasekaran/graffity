@@ -122,7 +122,7 @@ background: rgba(0, 0, 0, 0.1);
 		vertical-align: top;
 	}
   .wall table td:hover {
-   
+   cursor:pointer;
   }
 	.footer {
 		height:60px;
@@ -155,7 +155,7 @@ background: rgba(0, 0, 0, 0.1);
 		-moz-border-radius: 100%;
 		width:60px;
 		height:60px;
-		border:5px solid #333;
+		border:5px solid #FF7200;
 	}
 	.aimg {
 		width:80px;
@@ -182,12 +182,12 @@ background: rgba(0, 0, 0, 0.1);
     background-image:url("http://upload.wikimedia.org/wikipedia/commons/f/fe/20091007_Graffiti_Shanghai_7373.jpg");
   }
   .lovebtn {
-    background-image:url(love-button.png);
-    background-repeat:no-repeat;
-    background-position:center;
-    width:29px;
-    height:25px;
+    width:100%;
     float:left;
+    text-align:center;
+    margin-top:10px;
+  }
+  .lovebtn img {
   }
   .ainfo .name {
     font-size:18px;
@@ -288,4 +288,89 @@ background: rgba(0, 0, 0, 0.1);
   }
   .desSocial table td {
     padding:5px;
+  }
+  .lovecount {
+    text-align:center;
+  }
+  .openspace {
+    background-color:#dedede;
+    text-align:center;
+  }
+  .reservebtn {
+    background-color:#d56501;
+    color:#FFF;
+    font-family: 'Lato', sans-serif;
+    width:157px;
+    height:49px;
+    text-align:center;
+    line-height:49px;
+    border:0;
+    border-radius:8px;
+    font-size:18px;
+    display:block;
+  }
+  .reservebtn:hover {
+    color:#FFF;
+    text-decoration:none;
+    background-color:#c35f06;
+  }
+  .openspace .reservebtn {
+    margin-top:100px;
+    margin-left:105px;
+  }
+  .resrvdspace {
+    background-color:#dedede;
+    text-align:center;
+  }
+  .uploadbtn {
+    background-color:#d56501;
+    color:#FFF;
+    font-family: 'Lato', sans-serif;
+    width:157px;
+    height:49px;
+    text-align:center;
+    line-height:49px;
+    border:0;
+    border-radius:8px;
+    font-size:18px;
+    display:block;
+  }
+  .uploadbtn:hover {
+    color:#FFF;
+    text-decoration:none;
+    background-color:#c35f06;
+  }
+  .letgobtn {
+    background-color:#4d4d4d;
+    color:#FFF;
+    font-family: 'Lato', sans-serif;
+    width:157px;
+    height:49px;
+    text-align:center;
+    line-height:49px;
+    border:0;
+    border-radius:8px;
+    font-size:18px;
+    display:block;
+  }
+  .letgobtn:hover {
+    color:#FFF;
+    text-decoration:none;
+    background-color:#383838;
+  }
+  .resrvdspace .letgobtn {
+    margin-top:10px;
+    margin-left:105px;
+  }
+  .resrvdspace .uploadbtn {
+    margin-left:105px;
+  }
+/*BOOSTRAP OVERRIDE*/
+  .navbar .nav > li > a {
+    color:#FFF;
+    text-shadow:none;
+    margin-top:15px;
+  }
+  .navbar .nav > li > a:hover {
+    color:#ff7200;
   }
