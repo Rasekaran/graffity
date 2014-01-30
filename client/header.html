@@ -9,6 +9,12 @@
             <a class="brand" href="/">Graffity</a>
             <div class="nav-collapse collapse">
                 
+                <ul class="nav">{{#if currentUser}}
+                    <li><a href="{{pathFor 'userProfileUpdate'}}">Update</a></li>
+                </ul>{{/if}}
+            </div>
+            <div class="nav-collapse collapse">
+                
                 <ul class="nav pull-right">
                     <li>{{loginButtons}}</li>
                 </ul>

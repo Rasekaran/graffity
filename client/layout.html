@@ -1,7 +1,8 @@
 <template name="layout">
     <div class="fullwrap">
         {{> gheader}} 
-        {{> gwall}} 
-        {{> gfooter}} 
     </div>
+    <div id="main" class="row-fluid">
+            {{yield}}
+        </div>
 </template>
