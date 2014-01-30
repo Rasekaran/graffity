@@ -202,3 +202,55 @@ background: rgba(0, 0, 0, 0.1);
   .dname {
     font-size:20px;
   }
+  .headerarea {
+    background-color:#000;
+  }
+
+  .col1 {
+    width:356px;
+    float:left;
+  }
+  .col2 {
+    width:712px;
+    float:left;
+  }
+  .col3 {
+    width:356px;
+    float:left;
+  }
+  .postimgs {
+    width:356px;
+    height:260px;
+    float:left;
+    background-color:#ccc;
+  }
+  .designpro {
+    width:460px;
+    margin:0 auto;
+    height:520px;
+  }
+  .designpro > div {
+    margin-top:34px;
+  }
+  .designpro table { 
+    width:100%;
+    float:left;
+  }
+  .proimg img {
+    width:102px;
+    height:102px;
+    border-radius:100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border:5px solid #ff7200;
+    margin-right:10px;
+  }
+  .desinfo {
+    width:352px;
+  }
+  .proimgwrp {
+    width:122px;
+  }
+  .desname {
+    font-size:22px;
+  }
