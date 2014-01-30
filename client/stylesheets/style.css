@@ -7,8 +7,8 @@ margin-bottom: 10px;
 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 body {
-background: #eee;
-color: #666666;
+background: #FFF;
+color: #000;
 }
 .navbar { margin-bottom: 0; }
 .navbar .navbar-inner {
@@ -207,11 +207,11 @@ background: rgba(0, 0, 0, 0.1);
   }
 
   .col1 {
-    width:356px;
+    width:355px;
     float:left;
   }
   .col2 {
-    width:712px;
+    width:710px;
     float:left;
   }
   .col3 {
@@ -219,7 +219,7 @@ background: rgba(0, 0, 0, 0.1);
     float:left;
   }
   .postimgs {
-    width:356px;
+    width:355px;
     height:260px;
     float:left;
     background-color:#ccc;
@@ -253,4 +253,39 @@ background: rgba(0, 0, 0, 0.1);
   }
   .desname {
     font-size:22px;
+    margin-bottom: 10px;
+    float: left;
+  }
+  .lfloater {
+    float:left;
+  }
+  .desranking table {
+    width:auto;
+  }
+  .deslvl {
+    color:#b4b4b4;
+  }
+  .space {
+    width:20px;
+  }
+  .lovecounts img {
+    margin-right:5px;
+    float:left;
+  }
+  .deslvl {
+    margin-right:5px;
+  }
+  .desDesc {
+    font-size:18px;
+    line-height:24px;
+  }
+  .desSocial {
+    margin-top:10px;
+  }
+  .desSocial table {
+    float:left;
+    width:auto;
+  }
+  .desSocial table td {
+    padding:5px;
   }
