@@ -29,7 +29,7 @@ Template.gwall.helpers({
         	hasMore = (Images.findOne({locationY: row}) != undefined)
         }*/
 
-        for (var i = 1; i < 4; i++) {
+        for (var i = 1; i < 5; i++) {
             var rawData = Images.find({
                 locationX: i
             }, {

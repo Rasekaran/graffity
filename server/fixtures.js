@@ -8,7 +8,7 @@ if (Images.find().count() === 0) {
                 locationY: j,
                 autherId: '-1',
                 voters: {},
-                status: "notReserved",
+                status: "NotReserved",
                 imageName: ""
 
             });

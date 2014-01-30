@@ -1,11 +1,13 @@
    <template name="gupload">
     <td class="resrvdspace">
-            <div class="fullwrap reserveddiv">
+            <div class="fullwrap reserveddiv"><form class="main">
               <div class="fullwrap texts">You have an unoccupied space.</div>
-              <div class="fullwrap uploadwrap"><input type="file" name="file" /> <a href="#" class="uploadbtn">Upload</a></div>
-              <input type="hidden" name="locationX" value="">
-              <input type="hidden" name="locationY" value="">
-              <div class="fullwrap"><a href="#" class="letgobtn">Let Go</a></div>
+              <div class="fullwrap uploadwrap"><input type="file" name="file" /> 
+              <!--<a href="#" class="uploadbtn">Upload</a></div>-->
+              <input type="submit" value="Submit" class="btn btn-primary" />
+              <input type="hidden" name="locationX" value="{{locationX}}">
+              <input type="hidden" name="locationY" value="{{locationY}}">
+              <div class="fullwrap"><a href="#" class="letgobtn">Let Go</a></div></form>
             </div>
           </td>
 </template>

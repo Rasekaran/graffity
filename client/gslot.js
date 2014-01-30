@@ -1,13 +1,13 @@
 Template.gslot.helpers({
     isReserved: function() {
-        
-        return this.status == "reserved";
+        console.log("Test" + this.status);
+        return this.status == "Reserved";
     },
     isUploaded: function() {
-        
-        return this.status == "uploaded";
+        console.log("Test2" + this.status);
+        return this.status == "Uploaded";
     },
     isOwnSlot: function(){
-    	return this.ownerId == Meteor.user()._id;
+    	return this.autherId == Meteor.user()._id;
     }
 });

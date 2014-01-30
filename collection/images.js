@@ -10,18 +10,22 @@ Meteor.methods({
             throw new Meteor.Error(422, 'Please fill in a headline');
         if (!postAttributes.locationY)
             throw new Meteor.Error(422, 'Please fill in a headline');
-        if(Images.findOne({ locationX:postAttributes.locationX, locationX:postAttributes.locationY })) {
+        var updatingImage = Images.findOne({ locationX:postAttributes.locationX, locationY:postAttributes.locationY });
+        if(updatingImage.status!= "NotReserved") {
         	throw new Meteor.Error(422, 'Please fill in a headline');
         }
         
+        updatingImage.status = "Reserved";
+        updatingImage.autherId = user._id;
         // pick out the whitelisted keys
-        var image = _.extend(_.pick(postAttributes, 'locationX', 'locationY'), {
+        /*var image = _.extend(_.pick(postAttributes, 'locationX', 'locationY'), {
             autherId: user._id,
             voters: {},
             status: "reserved",
             imageName: ""
         });
-        var imageId = Images.insert(image);
+        var imageId = Images.insert(image);*/
+        var imageId = Images.update(updatingImage._id,updatingImage);
         //return postId;
     },
 
@@ -35,12 +39,15 @@ Meteor.methods({
             throw new Meteor.Error(422, 'Please fill in a headline');
         if (!postAttributes.locationY)
             throw new Meteor.Error(422, 'Please fill in a headline');
-        var recerved = Images.findOne({ locationX:postAttributes.locationX, locationX:postAttributes.locationY });
-        if( recerved && reserved.autherId != user._id ) {
+        var recerved = Images.findOne({ locationX:postAttributes.locationX, locationY:postAttributes.locationY });;
+        if( !recerved || recerved.autherId != user._id ) {
         	throw new Meteor.Error(422, 'Please fill in a headline');
         }
         
-        var imageId = Images.update(recerved._id,{imageName: postAttributes.fileName },{status: "uploaded"});
+        recerved.imageName = postAttributes.fileName;
+        recerved.states = "Uploaded";
+        var imageId = Images.update(recerved._id,recerved);
+        //var imageId = Images.update(recerved._id,{imageName: postAttributes.fileName },{status: "Uploaded"});
         //return postId;
     }
 

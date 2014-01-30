@@ -1,15 +1,17 @@
 
 Template.gupload.events({
-    'click a': function(e, tmpl) {
+    'submit form': function(e, tmpl) {//click a
         e.preventDefault();
 
+        
         //var divId = e.target.id.split(",");
-
         var image = {
             /*locationX: divId[0],
             locationY: divId[1],*/
-            locationX: $(e.target).find('[name=locationX]').val(),
-            locationY: $(e.target).find('[name=locationY]').val(),
+            locationX: parseInt($(e.target).find('[name=locationX]').val()),
+            locationY: parseInt($(e.target).find('[name=locationY]').val()),
+            /*locationX: parseInt(divId[0]),
+            locationY: parseInt(divId[1]),*/
             fileName: $(e.target).find('[name=file]').val().split('\\').pop()
 
         };
