@@ -371,6 +371,10 @@ background: rgba(0, 0, 0, 0.1);
     margin-top:30px;
     margin-bottom:20px;
   }
+  .uploadwrap input[type="file"] {
+    background:none;
+    border:0;
+  }
 /*BOOSTRAP OVERRIDE*/
   .navbar .nav > li > a {
     color:#FFF;
